@@ -1,60 +1,62 @@
-# User Management API – Spring Boot (Production-Ready)
+# User Management API – Spring Boot
 
-This is a **RESTful CRUD API for User Management** built using Spring Boot, designed to demonstrate production-ready backend architecture, security, testing, and deployment practices.
+A production-style RESTful API for user management built using Spring Boot, demonstrating secure backend design, authentication, and scalable architecture.
 
 ---
 
-## 🚀 Project Overview
-- Build a secure, scalable, and maintainable backend API.
-- Demonstrates **Spring Boot microservices architecture**, **JWT authentication**, **role-based access**, **validation**, **unit testing**, and **Dockerized deployment**.
-- Ideal for learning or showcasing **real-world backend engineering skills**.
+## 🚀 Features
+- CRUD operations for users (Create, Read, Update, Delete)
+- JWT-based authentication and role-based access control
+- Input validation for all endpoints
+- Global exception handling with structured responses
+- Pagination and sorting support
+- Unit testing using JUnit and Mockito
+- Dockerized setup using Docker and Docker Compose
 
 ---
 
 ## 🛠 Tech Stack
-- **Backend:** Java 17, Spring Boot, Spring Data JPA, Spring Security  
-- **Database:** PostgreSQL  
-- **Testing:** JUnit, Mockito  
-- **API Testing:** Postman (collection included)  
-- **Build Tool:** Maven  
-- **Containerization:** Docker & Docker Compose  
-- **Documentation:** Swagger (optional but recommended)  
+- Java 17
+- Spring Boot
+- Spring Security
+- Spring Data JPA (Hibernate)
+- PostgreSQL
+- Maven
+- Docker
 
 ---
 
-## ⚡ Features
-- **CRUD Operations** for Users
-  - Create, Read, Update, Delete
-- **JWT Authentication** with Role-Based Access Control
-- **Input Validation** for all endpoints
-- **Global Exception Handling** for structured error responses
-- **Pagination & Sorting** for listing users
-- **Unit Testing** for service and controller layers
-- **Dockerized Deployment** for easy setup
-- **Swagger API Documentation** (optional)
-- Ready for integration in microservices architecture
+## 🔐 Security
+- JWT authentication implemented for securing APIs
+- Role-based access control (RBAC)
+- Public endpoints for authentication (login/register)
 
 ---
 
 ## 📦 API Endpoints
 
-| Method | Endpoint       | Description                 |
-|--------|----------------|-----------------------------|
-| GET    | /users         | Get all users               |
-| GET    | /users/{id}    | Get a user by ID            |
-| POST   | /users         | Create a new user           |
-| PUT    | /users/{id}    | Update an existing user     |
-| DELETE | /users/{id}    | Delete a user by ID         |
-
-> JWT authentication protects all endpoints except login/register.
+| Method | Endpoint        | Description              |
+|--------|----------------|--------------------------|
+| GET    | /users         | Get all users            |
+| GET    | /users/{id}    | Get user by ID           |
+| POST   | /users         | Create new user          |
+| PUT    | /users/{id}    | Update user              |
+| DELETE | /users/{id}    | Delete user              |
 
 ---
 
-## 🧪 Postman Collection
-A Postman collection is included: `postman_collection.json`  
-You can import it to test all endpoints.
+## 🧪 Testing
+- Unit tests implemented for service and controller layers
+- Tools: JUnit, Mockito
 
 ---
 
-## 🏗 Project Structure
+## 🐳 Deployment
+- Dockerized using Docker and Docker Compose
+- Easily deployable in containerized environments
 
+---
+
+## 📖 Notes
+- Designed following clean architecture principles
+- Can be extended into a microservices-based system
